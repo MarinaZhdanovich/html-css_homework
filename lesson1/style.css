@@ -1,0 +1,49 @@
+body {
+  background-color: beige;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: cornflowerblue;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.title {
+  color: #222222;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987
+}
+
+.subtitle {
+  color: coral;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
+}
+
+.picture {
+  border-radius: 20px 50px 20px 80px;
+  width: 500px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}

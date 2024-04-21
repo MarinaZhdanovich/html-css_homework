@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #FFF;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+p,
+a,
+button {
+  font-family: Inter;
+}
+
+.container {
+  max-width: 1174px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 40px;
+  margin-bottom: 84px;
+}
+
+.navigation a {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+}
+.navigation a.navigation_home {
+  color: #F25822;
+  font-weight: 600;
+}
+
+.main {
+  margin-bottom: 100px;
+}
+
+.mainContent_leftSide h1 {
+  color: #000;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.mainContent_leftSide p {
+  color: #888;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 32px;
+}
+
+.mainContent_leftSide-btnList button{
+  padding: 16px 10px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
+.mainContent_leftSide-btnList button.btnStartNow{
+  border-radius: 56px;
+  background: #F25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+.mainContent_leftSide-btnList button.btnWatchVideo {
+  color: #AAA;
+  background: none;
+}
+
+.footer {
+  padding: 100px 0;
+}

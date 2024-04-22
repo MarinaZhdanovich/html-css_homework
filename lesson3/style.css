@@ -41,7 +41,7 @@ button {
   line-height: normal;
   padding: 10px;
 }
-.navigation a.navigation_home {
+.navigation a.navigation__home {
   color: #F25822;
   font-weight: 600;
 }
@@ -50,7 +50,7 @@ button {
   margin-bottom: 100px;
 }
 
-.mainContent_leftSide h1 {
+.mainContent__leftSide h1 {
   color: #000;
   font-size: 60px;
   font-weight: 700;
@@ -58,7 +58,7 @@ button {
   margin-bottom: 20px;
 }
 
-.mainContent_leftSide p {
+.mainContent__leftSide p {
   color: #888;
   font-size: 20px;
   font-weight: 400;
@@ -66,7 +66,7 @@ button {
   margin-bottom: 32px;
 }
 
-.mainContent_leftSide-btnList button{
+.mainContent__leftSide-btnList button{
   padding: 16px 10px;
   cursor: pointer;
   color: #FFF;
@@ -75,12 +75,12 @@ button {
   line-height: normal;
   border: none;
 }
-.mainContent_leftSide-btnList button.btnStartNow{
+.mainContent__leftSide-btnList button.btnStartNow{
   border-radius: 56px;
   background: #F25822;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
 }
-.mainContent_leftSide-btnList button.btnWatchVideo {
+.mainContent__leftSide-btnList button.btnWatchVideo {
   color: #AAA;
   background: none;
 }

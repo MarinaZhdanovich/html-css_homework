@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -34,6 +34,18 @@ button {
   margin-bottom: 84px;
 }
 
+.nav__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  width: 577px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation a {
   color: #000;
   font-size: 14px;
@@ -48,6 +60,15 @@ button {
 
 .main {
   margin-bottom: 100px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContent__leftSide {
+  max-width: 556px;
 }
 
 .mainContent__leftSide h1 {
@@ -66,6 +87,14 @@ button {
   margin-bottom: 32px;
 }
 
+.mainContent__leftSide-btnList {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+
+
 .mainContent__leftSide-btnList button{
   padding: 16px 10px;
   cursor: pointer;
@@ -79,6 +108,7 @@ button {
   border-radius: 56px;
   background: #F25822;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+  width: 140px;
 }
 .mainContent__leftSide-btnList button.btnWatchVideo {
   color: #AAA;
@@ -87,4 +117,9 @@ button {
 
 .footer {
   padding: 100px 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
 }

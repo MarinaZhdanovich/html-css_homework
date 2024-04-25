@@ -53,6 +53,7 @@ button {
   line-height: normal;
   padding: 10px;
 }
+
 .navigation a.navigation__home {
   color: #F25822;
   font-weight: 600;
@@ -93,8 +94,6 @@ button {
   align-items: center;
 }
 
-
-
 .mainContent__leftSide-btnList button{
   padding: 16px 10px;
   cursor: pointer;
@@ -104,12 +103,14 @@ button {
   line-height: normal;
   border: none;
 }
+
 .mainContent__leftSide-btnList button.btnStartNow{
   border-radius: 56px;
   background: #F25822;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
   width: 140px;
 }
+
 .mainContent__leftSide-btnList button.btnWatchVideo {
   color: #AAA;
   background: none;

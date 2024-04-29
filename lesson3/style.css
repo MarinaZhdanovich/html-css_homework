@@ -131,7 +131,6 @@ button {
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: start;
   gap: 25px;
 }
@@ -182,7 +181,6 @@ button {
 .information {
   background: #FAFAFA;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -216,7 +214,6 @@ button {
 .cardBottom {
   padding: 0 34px 34px 34px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   background: #FFF;

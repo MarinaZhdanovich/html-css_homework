@@ -134,6 +134,7 @@ main {
 
 .cardBig {
   grid-column: 1 / 4;
+  margin-bottom: 96px;
 }
 
 .price {

@@ -341,3 +341,114 @@ main {
     margin-bottom: 70.52px;
   }
 }
+
+@media(max-width: 767px) {
+  .container {
+    max-width: 343px;
+  }
+
+  .logos {
+    margin-bottom: 18px;
+  }
+
+  .buttonList {
+    margin-top: 25px;
+    margin-bottom: 26px;
+  }
+
+  .hideBtn {
+    display: none;
+  }
+
+  .bannerinfo {
+    margin-bottom: 64px;
+    min-height: 363px;
+    justify-content: center;
+  }
+
+  .hidebanner {
+    display: none;
+  }
+
+  .bannerText {
+    height: 61px;
+    margin-top: 148px;
+    padding-left: 15px;
+  }
+
+  .bannerText h1 {
+    font-size: 38px;
+  }
+
+  .bannerText h2 {
+    font-size: 20px;
+  }
+
+  .offer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr) 111px;
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .card1 {
+    width: 343px;
+    height: 247px;
+  }
+
+  .card2 {
+    width: 344px;
+    height: 249px;
+  }
+
+  .card3 {
+    width: 343px;
+    height: 248px;
+  }
+
+  .card4 {
+    width: 343.262px;
+    height: 111px;
+    background-position: center;
+  }
+
+  .cardBig {
+    grid-column: 1 / 2;
+  }
+
+  .price {
+    padding-top: 102px;
+    padding-bottom: 76px;
+  }
+
+  .priceBig {
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+
+  .information {
+    margin-bottom: 64.7px;
+    gap: 3.3px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16.61px;
+    margin-bottom: 40.61px;
+  }
+
+  .product p {
+    font-weight: 400;
+    margin-bottom: 5.33px;
+  }
+
+  .prodInfo {
+    padding: 23.28px 28.72px 19.94px 16.41px;
+    gap: 12.62px;
+  }
+
+  .btnAll {
+    margin-bottom: 85px;
+  }
+}

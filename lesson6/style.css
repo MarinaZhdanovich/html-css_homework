@@ -52,6 +52,7 @@ header {
   margin-bottom: 20px;
   display: flex;
   gap: 33px;
+  position: relative;
 }
 
 .btn {
@@ -407,6 +408,40 @@ footer {
   gap: 7.29px;
 }
 
+.buttonList::after {
+  content: "5";
+  background:#F16D7F;
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  text-align: center;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+}
+
+
+.btnAll:hover {
+  background:#F16D7F;
+  color: #FFFFFF;
+}
+
+svg:hover path{
+  fill: #FFFFFF;
+}
+
+svg:hover .icon{
+  fill: #F16D7F;
+}
+
+
+
 @media(min-width: 768px) and (max-width: 1140px) {
   .container {
     max-width: 735px;
@@ -567,6 +602,10 @@ footer {
   .buttonList {
     margin-top: 25px;
     margin-bottom: 26px;
+  }
+
+  .buttonList::after {
+    content: none;
   }
 
   .hideBtn {

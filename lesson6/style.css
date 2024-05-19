@@ -246,6 +246,7 @@ main {
   background: #FFF;
   margin-bottom: 95px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 footer {
@@ -567,10 +568,17 @@ footer {
   display: flex;
 }
 
-
 .btnAll:hover {
-  background:#F16D7F;
+  background-color:#F16D7F;
   color: #FFFFFF;
+}
+
+svg path{
+  transition: fill 0.3s;
+}
+
+svg .icon{
+  transition: fill 0.3s;
 }
 
 svg:hover path{
@@ -580,7 +588,6 @@ svg:hover path{
 svg:hover .icon{
   fill: #F16D7F;
 }
-
 
 
 @media(min-width: 768px) and (max-width: 1140px) {

@@ -302,7 +302,7 @@ footer {
 .photo {
   width: 1600px;
   height: 448px;
-  background-image: url(./img/photo_subscribe.png);
+  background-image: url(./img/photo_subscribe.webp);
   background-size: cover;
 }
 

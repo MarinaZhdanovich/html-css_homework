@@ -275,7 +275,7 @@ footer {
   justify-content: space-between;
 }
 
-.feature__form h1 {
+.feature__form h2 {
   margin-top: 25px;
   color: #FBFBFB;
   font-size: 19.96px;
@@ -874,7 +874,7 @@ svg:hover .icon{
     max-width: 347.82px;
   }
 
-  .feature__form h1 {
+  .feature__form h2 {
     margin-top: 24px;
   }
 

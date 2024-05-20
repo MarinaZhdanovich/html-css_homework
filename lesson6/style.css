@@ -112,21 +112,21 @@ main {
 .card1 {
   width: 360px;
   height: 260px;
-  background-image: url(./img/forwomen.png);
+  background-image: url(./img/forwomen.webp);
   background-size: cover;
 }
 
 .card2 {
   width: 360px;
   height: 260px;
-  background-image: url(./img/formen.png);
+  background-image: url(./img/formen.webp);
   background-size: cover;
 }
 
 .card3 {
   width: 360px;
   height: 260px;
-  background-image: url(./img/forkids.png);
+  background-image: url(./img/forkids.webp);
   background-size: cover;
 }
 
@@ -498,42 +498,42 @@ footer {
 .product1 {
   width: 360px;
   height: 420px;
-  background-image: url(./img/product1.jpg);
+  background-image: url(./img/product1.webp);
   background-size: cover;
 }
 
 .product2 {
   width: 360px;
   height: 420px;
-  background-image: url(./img/product2.png);
+  background-image: url(./img/product2.webp);
   background-size: cover;
 }
 
 .product3 {
   width: 360px;
   height: 420px;
-  background-image: url(./img/product3.jpg);
+  background-image: url(./img/product3.webp);
   background-size: cover;
 }
 
 .product4 {
   width: 360px;
   height: 420px;
-  background-image: url(./img/product4.jpg);
+  background-image: url(./img/product4.webp);
   background-size: cover;
 }
 
 .product5 {
   width: 360px;
   height: 420px;
-  background-image: url(./img/product5.png);
+  background-image: url(./img/product5.webp);
   background-size: cover;
 }
 
 .product6 {
   width: 360px;
   height: 420px;
-  background-image: url(./img/product6.png);
+  background-image: url(./img/product6.webp);
   background-size: cover;
 }
 

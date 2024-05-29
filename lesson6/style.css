@@ -336,8 +336,10 @@ main {
   width: 282.907px;
   margin-top: 48.5px;
   margin-bottom: 96.5px;
+  padding: 11.5px 16px 12.5px 16px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #EBEBEB;
 }
 .pagination a {
@@ -354,6 +356,10 @@ main {
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
+}
+.pagination__group {
+  display: flex;
+  align-items: baseline;
 }
 
 footer {

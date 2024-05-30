@@ -79,7 +79,6 @@ main {
   justify-content: space-between;
   align-items: center;
   height: 148px;
-  margin-bottom: 51px;
   position: relative;
 
   &__message h2 {
@@ -112,6 +111,7 @@ main {
 .filter {
   display: flex;
   gap: 320px;
+  margin-top: 51px;
   margin-bottom: 65px;
 
   &__info {
@@ -169,6 +169,61 @@ main {
   }
 }
 
+.bannerinfoProduct {
+  background: #F7F7F7;
+  height: 777px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerinfoProduct__overlay {
+  max-width: 1140px;
+  height: 601px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -64.13px;
+  margin-bottom: 129.41px;
+
+  h1 {
+    margin-top: 64.13px;
+    margin-bottom: 12.1px;
+    color: #F16D7F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h2 {
+    margin-top: 12.1px;
+    color: #4D4D4D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  p {
+    margin-top: 48.41px;
+    width: 555px;
+    color: #5E5E5E;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h3 {
+    margin-top: 32.27px;
+    color: #EF5B70;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
 .bannerinfo .hidemenu {
   display: none;
 }
@@ -176,6 +231,8 @@ main {
 .bannerinfoCatalog .hidemenu {
   display: none;
 }
+
+
 
 .offer {
   background: #FFF;
@@ -286,6 +343,12 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.productsProduct {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 

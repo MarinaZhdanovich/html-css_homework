@@ -159,8 +159,26 @@ main {
   background: #F7F7F7;
   height: 777px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bannerinfoProduct__background {
+  width: 597px;
+  height: 724px;
+  background-image: url(./img/image_woman_product.jpg);
+}
+
+.bannerinfoProduct__background-left {
+  position: absolute;
+  top: 365px;
+  left: 0;
+}
+
+.bannerinfoProduct__background-right {
+  position: absolute;
+  top: 365px;
+  right: 0;
 }
 
 .bannerinfoProduct__overlay {
@@ -173,6 +191,7 @@ main {
   align-items: center;
   margin-top: -64.13px;
   margin-bottom: 129.41px;
+  position: relative;
 }
 .bannerinfoProduct__overlay h1 {
   margin-top: 64.13px;
@@ -326,6 +345,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 128px;
 }
 
 .product h1 {

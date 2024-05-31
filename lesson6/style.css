@@ -222,36 +222,31 @@ main {
   font-weight: 400;
   line-height: normal;
 }
-
-.bannerinfoProduct__overlay_line {
+.bannerinfoProduct__overlay__line {
   border-bottom: 1px solid #EAEAEA;
   width: 641px;
   margin-top: 65.04px;
   margin-bottom: 65.05px;
 }
-
-.bannerinfoProduct__filter {
+.bannerinfoProduct__overlay__filter {
   width: 373.02px;
   display: flex;
   justify-content: space-between;
 }
-
-.bannerinfoProduct__filter_gap {
+.bannerinfoProduct__overlay__filter_gap {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 9px;
 }
-
-.bannerinfoProduct__filter_gap h2 {
+.bannerinfoProduct__overlay__filter_gap h2 {
   color: #6F6E6E;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
   margin-top: 0;
 }
-
-.bannerinfoProduct__button {
+.bannerinfoProduct__overlay__button {
   margin-top: 48.41px;
   width: 212px;
   padding: 15.13px 57px 14.12px 24px;

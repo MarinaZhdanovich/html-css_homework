@@ -2,6 +2,22 @@
 
 @import 'vars';
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,8 +91,7 @@ main {
 }
 
 .bannerinfoCatalog {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   align-items: center;
   height: 148px;
   position: relative;
@@ -200,8 +215,7 @@ main {
   height: 601px;
   border: 1px solid #EAEAEA;
   background: #FFF;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   margin-top: -64.13px;
   margin-bottom: 129.41px;
@@ -242,50 +256,49 @@ main {
     line-height: normal;
   }
 
-}
+  &__line {
+    border-bottom: 1px solid #EAEAEA;
+    width: 641px;
+    margin-top: 65.04px;
+    margin-bottom: 65.05px;
+  }
 
-.bannerinfoProduct__overlay_line{
-  border-bottom: 1px solid #EAEAEA;
-  width: 641px;
-  margin-top: 65.04px;
-  margin-bottom: 65.05px;
-}
+  &__filter {
+    width: 373.02px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.bannerinfoProduct__filter{
-  width: 373.02px;
-  display: flex;
-  justify-content: space-between;
-}
+  &__filter_gap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
 
-.bannerinfoProduct__filter_gap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-}
+  &__filter_gap h2 {
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+  }
 
-.bannerinfoProduct__filter_gap h2 {
-  color: #6F6E6E;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 0;
-}
-
-.bannerinfoProduct__button {
-  margin-top: 48.41px;
-  width: 212px;
-  padding: 15.13px 57px 14.12px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #FF6A6A;
-  color: #F26376;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  background: none;
-  cursor: pointer;
+  &__button {
+    margin-top: 48.41px;
+    width: 212px;
+    padding: 15.13px 57px 14.12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #FF6A6A;
+    color: #F26376;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    cursor: pointer;
+  }
 }
 
 .bannerinfo .hidemenu {
@@ -295,8 +308,6 @@ main {
 .bannerinfoCatalog .hidemenu {
   display: none;
 }
-
-
 
 .offer {
   background: #FFF;
@@ -348,8 +359,7 @@ main {
 .price {
   padding-top: 105px;
   padding-bottom: 105px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
 
   h1 {
@@ -375,8 +385,7 @@ main {
 
 .information {
   margin-bottom: 47px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   gap: 6px;
 
@@ -441,8 +450,7 @@ main {
 .prodInfo {
   background: #F8F8F8;
   padding: 24px 16px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: start;
   gap: 16px;
 }
@@ -450,8 +458,7 @@ main {
 .prodInfo-catalog {
   background: #F8F8F8;
   padding: 25.35px 28.8px 20px 16.46px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: start;
   gap: 12.65px;
 }
@@ -483,8 +490,7 @@ main {
   margin-top: 48.5px;
   margin-bottom: 96.5px;
   padding: 11.5px 16px 12.5px 16px;
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   align-items: center;
   border: 1px solid #EBEBEB;
 
@@ -557,8 +563,7 @@ footer {
 }
 
 .photo__registration {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   gap: 223.26px;
 }
 
@@ -578,8 +583,7 @@ footer {
 .photo__registration-info {
   padding-top: 97px;
   max-width: 360px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
 
   p {
@@ -596,8 +600,7 @@ footer {
   padding-top: 150px;
   padding-bottom: 156px;
   max-width: 557px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
 
   h1 {
@@ -653,8 +656,7 @@ footer {
 }
 
 .background {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
 
   p {
     width: 332px;
@@ -699,8 +701,7 @@ footer {
   top: 0;
   right: 0;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   gap: 20px;
 
   h1 {
@@ -733,24 +734,21 @@ footer {
 .menu__man {
   padding-left: 32px;
   height: 130px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between
 }
 
 .menu__woman {
   padding-left: 32px;
   height: 163px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between
 }
 
 .menu__kids {
   padding-left: 32px;
   height: 196px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between
 }
 
@@ -847,9 +845,7 @@ footer {
 .btnProduct {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .btnProduct button{

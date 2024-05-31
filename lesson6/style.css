@@ -162,23 +162,21 @@ main {
   justify-content: center;
   position: relative;
 }
-
-.bannerinfoProduct__background {
-  width: 597px;
-  height: 724px;
-  background-image: url(./img/image_woman_product.jpg);
-}
-
 .bannerinfoProduct__background-left {
   position: absolute;
   top: 365px;
   left: 0;
 }
-
 .bannerinfoProduct__background-right {
   position: absolute;
   top: 365px;
   right: 0;
+}
+
+.bannerinfoProduct__background {
+  width: 597px;
+  height: 724px;
+  background-image: url(./img/image_woman_product.jpg);
 }
 
 .bannerinfoProduct__overlay {
@@ -223,6 +221,50 @@ main {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
+}
+
+.bannerinfoProduct__overlay_line {
+  border-bottom: 1px solid #EAEAEA;
+  width: 641px;
+  margin-top: 65.04px;
+  margin-bottom: 65.05px;
+}
+
+.bannerinfoProduct__filter {
+  width: 373.02px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannerinfoProduct__filter_gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.bannerinfoProduct__filter_gap h2 {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+}
+
+.bannerinfoProduct__button {
+  margin-top: 48.41px;
+  width: 212px;
+  padding: 15.13px 57px 14.12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #FF6A6A;
+  color: #F26376;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background: none;
+  cursor: pointer;
 }
 
 .bannerinfo .hidemenu {

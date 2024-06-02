@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ h2,
 h3,
 p,
 a,
+summary,
 button {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -28,6 +30,14 @@ button {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .header {
@@ -99,40 +109,6 @@ main {
 .bannerinfoCatalog__breadcrumb a.bannerinfoCatalog__breadcrumb_color-size {
   color: #F16D7F;
   font-weight: 700;
-}
-
-.filter {
-  display: flex;
-  gap: 320px;
-  margin-top: 51px;
-  margin-bottom: 65px;
-}
-.filter__info {
-  display: flex;
-  gap: 11px;
-  align-items: center;
-}
-.filter__info h1 {
-  color: #000;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-}
-.filter__choice {
-  display: flex;
-  justify-content: space-between;
-  width: 296px;
-}
-.filter__choice_gap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.filter__choice h2 {
-  color: #6F6E6E;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .bannerText {
@@ -268,6 +244,84 @@ main {
 
 .bannerinfoCatalog .hidemenu {
   display: none;
+}
+
+.filter {
+  margin-top: 51px;
+  margin-bottom: 65px;
+  display: flex;
+  gap: 320px;
+}
+.filter__summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter.filter__info_summary {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filter__sort {
+  display: flex;
+  justify-content: space-between;
+  width: 296.02px;
+}
+.filter__sort__details {
+  position: relative;
+}
+.filter__sort__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__sort__box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  top: 22px;
+  left: -9px;
+  width: 79px;
+  height: 103px;
+  padding: 9px 30px 12px 9px;
+  box-sizing: border-box;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+}
+.filter__sort__box .checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #EBEBEB;
+  width: 13px;
+  height: 13px;
+}
+.filter__sort__box .checkbox:checked {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+}
+.filter__sort__box label {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #6F6E6E;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .offer {

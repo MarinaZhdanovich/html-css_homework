@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @import 'vars';
 
 @mixin flex-center {
@@ -39,6 +41,7 @@ h2,
 h3,
 p,
 a,
+summary,
 button {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -47,6 +50,14 @@ button {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .header {
@@ -120,45 +131,6 @@ main {
   &__breadcrumb a.bannerinfoCatalog__breadcrumb_color-size {
     color: $text-color;
     font-weight: 700;
-  }
-}
-
-.filter {
-  display: flex;
-  gap: 320px;
-  margin-top: 51px;
-  margin-bottom: 65px;
-
-  &__info {
-    display: flex;
-    gap: 11px;
-    align-items: center;
-  }
-
-  &__info h1{
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  &__choice {
-    display: flex;
-    justify-content: space-between;
-    width: 296px;
-  }
-
-  &__choice_gap {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  &__choice h2 {
-    color: #6F6E6E;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
   }
 }
 
@@ -307,6 +279,88 @@ main {
 
 .bannerinfoCatalog .hidemenu {
   display: none;
+}
+
+.filter {
+  margin-top: 51px;
+  margin-bottom: 65px;
+  display: flex;
+  gap: 320px;
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &.filter__info_summary {
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.filter__sort {
+  display: flex;
+  justify-content: space-between;
+  width: 296.02px;
+
+  &__details{
+    position: relative;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    top: 22px;
+    left: -9px;
+    width: 79px;
+    height: 103px;
+    padding: 9px 30px 12px 9px;
+    box-sizing: border-box;
+    background: #FFF;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  }
+
+  &__box .checkbox {
+    appearance: none;
+    border: 1px solid #EBEBEB;
+    width: 13px;
+    height: 13px;
+  }
+
+  &__box .checkbox:checked {
+    appearance: auto;
+  }
+
+  &__box label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: #6F6E6E;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 
 .offer {

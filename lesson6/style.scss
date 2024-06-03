@@ -60,8 +60,25 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+.top {
+  overflow: hidden;
+}
+
+#check {
+  position: absolute;
+  left: -99999px;
+  visibility: hidden;
+}
+
+#check:checked ~ .menu_new {
+  right: 0;
+}
+
 .header {
   background: $primary-color;
+  position: relative;
+
+
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -79,7 +96,13 @@ summary::-webkit-details-marker {
   margin-bottom: 20px;
   display: flex;
   gap: 33px;
-  position: relative;
+}
+
+.buttonList__catalog {
+  margin-top: 26px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 33px;
 }
 
 .btn {
@@ -282,18 +305,25 @@ main {
 }
 
 .filter {
-  margin-top: 51px;
-  margin-bottom: 65px;
-  display: flex;
-  gap: 320px;
+  position: relative;
+  height: 133px;
+
+  &__main{
+    position: absolute;
+    top: 51px;
+    left: 0;
+  }
 
   &__main[open] {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    background: #FFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     width: 360px;
     height: 531px;
     padding: 13px 17px 16px;
     box-sizing: border-box;
-    position: relative;
   }
 
   &__main[open] summary.filter__summary {
@@ -303,7 +333,7 @@ main {
     line-height: normal;
   }
 
-  &__main[open] svg path {
+  &__main[open] svg.filter__summary_svg path {
     fill: #EF5B70;
   }
 
@@ -337,7 +367,6 @@ main {
     font-weight: 400;
     line-height: normal;
     border-bottom: 1px solid #EBEBEB;;
-    width: 310px;
     height: 37px;
     border-left: 5px solid #EF5B70;
     padding-left: 11px;
@@ -366,6 +395,9 @@ main {
 }
 
 .filter__sort {
+  position: absolute;
+  top: 51px;
+  left: 390px;
   display: flex;
   justify-content: space-between;
   width: 296.02px;
@@ -789,7 +821,11 @@ footer {
   gap: 7.29px;
 }
 
-.buttonList::after {
+.buttonList {
+position: relative;
+}
+
+.buttonList::after{
   content: "5";
   background: $text-color;
   width: 19px;
@@ -803,8 +839,65 @@ footer {
   font-weight: 400;
   line-height: normal;
   position: absolute;
-  top: -7px;
-  right: -7px;
+  top: -8px;
+  right: -8px;
+}
+
+.buttonList__catalog::after {
+  content: "5";
+  background: $text-color;
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  text-align: center;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu_new {
+  background: #FFF;
+  width: 232px;
+  height: 634px;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  right: -232px;
+  box-sizing: border-box;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+  @include flex-column;
+  gap: 20px;
+  transition: right 0.7s;
+  background: #FFF;
+
+  h1 {
+    margin-top: 32px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 33px;
+    margin-bottom: 4px;
+  }
+
+  a {
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 21.5px;
+  }
+}
+
+.menu_new .menu-h2 {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0;
 }
 
 .menu {
@@ -812,8 +905,10 @@ footer {
   width: 232px;
   height: 634px;
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
+  box-sizing: border-box;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   @include flex-column;
   gap: 20px;
@@ -1040,6 +1135,9 @@ svg:hover .icon{
   .bannerText h2 {
     font-size: 24px;
   }
+  .buttonList__checkbox::after {
+    right: -122px;
+  }
 
   .offer {
     gap: 20px;
@@ -1171,6 +1269,11 @@ svg:hover .icon{
   .buttonList::after {
     content: none;
   }
+
+  .buttonList__catalog::after {
+    content: none;
+  }
+
 
   .hideBtn {
     display: none;

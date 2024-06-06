@@ -137,23 +137,43 @@ main {
     line-height: normal;
   }
 
-  &__breadcrumb a {
+  &__breadcrumb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__breadcrumb__box a {
     color: #636363;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
   }
 
-  &__breadcrumb-separator {
-    color: #636363;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
+  &__breadcrumb__box a:hover {
+    color: $text-color;
   }
 
-  &__breadcrumb a.bannerinfoCatalog__breadcrumb_color-size {
+  // &__breadcrumb-separator {
+  //   color: #636363;
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   line-height: normal;
+  // }
+
+  &__breadcrumb__box:last-child a {
     color: $text-color;
     font-weight: 700;
+  }
+
+  &__breadcrumb__box:not(:last-child)::after {
+    content: '/';
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #636363;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 

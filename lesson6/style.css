@@ -98,21 +98,32 @@ main {
   font-weight: 400;
   line-height: normal;
 }
-.bannerinfoCatalog__breadcrumb a {
+.bannerinfoCatalog__breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerinfoCatalog__breadcrumb__box a {
   color: #636363;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
 }
-.bannerinfoCatalog__breadcrumb-separator {
-  color: #636363;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
+.bannerinfoCatalog__breadcrumb__box a:hover {
+  color: #F16D7F;
 }
-.bannerinfoCatalog__breadcrumb a.bannerinfoCatalog__breadcrumb_color-size {
+.bannerinfoCatalog__breadcrumb__box:last-child a {
   color: #F16D7F;
   font-weight: 700;
+}
+.bannerinfoCatalog__breadcrumb__box:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #636363;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .bannerText {

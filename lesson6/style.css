@@ -733,6 +733,7 @@ main {
 .productsCart__grandtotal {
   margin-top: 12px;
   margin-right: 3px;
+  margin-bottom: 21px;
   width: 170px;
   display: flex;
   justify-content: space-between;
@@ -746,6 +747,46 @@ main {
 .productsCart__grandtotal h2.productsCart__grandtotal_color {
   color: #F16D7F;
   font-weight: 700;
+}
+.productsCart__line {
+  border-bottom: 1px solid #E2E2E2;
+  width: 275px;
+  margin-right: 8px;
+  margin-bottom: 17px;
+}
+.productsCart__total button {
+  background: #F16D7F;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  padding: 14px 43px 16px 40px;
+  margin-right: 9px;
+}
+.productsCart__mainButtons {
+  display: flex;
+  gap: 192px;
+  margin-bottom: 128px;
+}
+.productsCart__mainButtons_left {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  background: none;
+  border: 1px solid #A4A4A4;
+  padding: 16px 39px 15px 38px;
+}
+.productsCart__mainButtons_right {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  background: none;
+  border: 1px solid #A4A4A4;
+  padding: 16px 38px 15px 38px;
 }
 
 .pagination {

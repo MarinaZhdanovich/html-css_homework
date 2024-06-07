@@ -42,6 +42,7 @@ h3,
 p,
 a,
 summary,
+span,
 button {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -316,11 +317,30 @@ main {
   }
 }
 
+.bannerinfoCart {
+  height: 148px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  &__message h2 {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
 .bannerinfo .hidemenu {
   display: none;
 }
 
 .bannerinfoCatalog .hidemenu {
+  display: none;
+}
+
+.bannerinfoCart .hidemenu {
   display: none;
 }
 
@@ -650,6 +670,176 @@ main {
   cursor: pointer;
   transition: all 0.3s;
 }
+
+.productsCart {
+  margin-top: 96px;
+
+  &__allinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  }
+
+  &__box img {
+    width: 262px;
+    height: 306px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 22px 62px 31px;
+  }
+
+  &__price h1 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__price h2 {
+    color: #575757;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__price h2.productsCart__main_marging-left {
+    margin-left: 1px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 57px;
+    margin-bottom: 42px;
+  }
+
+  &__main_size {
+    width: 262px;
+  }
+
+  &__quantity {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__quantity span {
+    border: 1px solid #EAEAEA;
+    width: 44px;
+    height: 24.949px;
+    color: #656565;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__shipping {
+    width: 360px;
+    height: 272px;
+ }
+
+  &__form h2 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__form input {
+    width: 358px;
+    height: 43px;
+    border: 1px solid #A4A4A4;
+    margin-top: 20.5px;
+  }
+
+  &__form input::placeholder {
+    color: #222;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+  }
+
+  &__form input:first-of-type::placeholder {
+    color: #B1B1B1;
+  }
+
+  &__form button{
+    margin-top: 23px;
+    color: #4A4A4A;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 9px 13.2px 11px 14.21px;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #A4A4A4;
+  }
+
+  &__part2 {
+    margin-top: 40px;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__total {
+    width: 360px;
+    height: 214px;
+    background: #F5F3F3;
+    padding: 39px 34px 42px 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &__subtotal {
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtotal h2 {
+    color: #4A4A4A;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__grandtotal {
+    margin-top: 12px;
+    margin-right: 3px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__grandtotal h2 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__grandtotal h2.productsCart__grandtotal_color {
+    color: #F16D7F;
+    font-weight: 700;
+  }
+}
+
+
 
 .pagination{
   width: 282.907px;

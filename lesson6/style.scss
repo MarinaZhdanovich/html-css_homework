@@ -303,9 +303,9 @@ main {
   &__button {
     margin-top: 48.41px;
     width: 212px;
-    padding: 15.13px 57px 14.12px 24px;
+    padding: 14.13px 56px 13.12px 23px;
     display: flex;
-    justify-content: space-between;
+    gap: 22px;
     align-items: center;
     border: 1px solid #FF6A6A;
     color: #F26376;
@@ -314,6 +314,16 @@ main {
     line-height: normal;
     background: none;
     cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__button:hover &__button_svg path {
+    fill: #FFF;
+  }
+
+  &__button:hover {
+    color: #FFF;
+    background: #F26376;
   }
 }
 
@@ -727,6 +737,10 @@ main {
     width: 262px;
   }
 
+  &__main_svg:hover path {
+    fill: #F16D7F;
+  }
+
   &__quantity {
     display: flex;
     gap: 24px;
@@ -760,6 +774,8 @@ main {
     height: 43px;
     border: 1px solid #A4A4A4;
     margin-top: 20.5px;
+    padding-left: 16px;
+    box-sizing: border-box;
   }
 
   &__form input::placeholder {
@@ -767,7 +783,6 @@ main {
     font-size: 13px;
     font-weight: 400;
     line-height: normal;
-    padding-left: 16px;
   }
 
   &__form input:first-of-type::placeholder {
@@ -784,11 +799,17 @@ main {
     background: none;
     cursor: pointer;
     border: 1px solid #A4A4A4;
+    transition: all 0.3s;
+  }
+
+  &__form button:hover {
+    color: #FFF;
+    background: #F16D7F;
+    border: 1px solid #F16D7F;
   }
 
   &__part2 {
     margin-top: 40px;
-    margin-bottom: 72px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -856,12 +877,17 @@ main {
     cursor: pointer;
     padding: 14px 43px 16px 40px;
     margin-right: 9px;
+    transition: all 0.3s;
+  }
+
+  &__total button:hover {
+    color: #F16D7F;
+    background: #FFF;
   }
 
   &__mainButtons {
-    display: flex;
-    gap: 192px;
-    margin-bottom: 128px;
+    height: 250px;
+    position: relative;
   }
 
   &__mainButtons_left {
@@ -872,6 +898,17 @@ main {
     background: none;
     border: 1px solid #A4A4A4;
     padding: 16px 39px 15px 38px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    top: 72px;
+    left: 0;
+  }
+
+  &__mainButtons_left:hover {
+    color: #FFF;
+    background: #F16D7F;
+    border: 1px solid #F16D7F;
   }
 
   &__mainButtons_right {
@@ -882,10 +919,19 @@ main {
     background: none;
     border: 1px solid #A4A4A4;
     padding: 16px 38px 15px 38px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    top: 72px;
+    left: 427px;
+  }
+
+  &__mainButtons_right:hover {
+    color: #FFF;
+    background: #F16D7F;
+    border: 1px solid #F16D7F;
   }
 }
-
-
 
 .pagination{
   width: 282.907px;
@@ -1186,6 +1232,10 @@ position: relative;
     line-height: normal;
     padding-left: 21.5px;
   }
+
+  a:hover {
+    color: #F16D7F;;
+  }
 }
 
 .menu .menu-h2 {
@@ -1348,7 +1398,7 @@ svg .icon{
   transition: fill 0.3s;
 }
 
-svg:hover path{
+.social-svg:hover path{
   fill: #FFFFFF;
 }
 

@@ -241,9 +241,9 @@ main {
 .bannerinfoProduct__overlay__button {
   margin-top: 48.41px;
   width: 212px;
-  padding: 15.13px 57px 14.12px 24px;
+  padding: 14.13px 56px 13.12px 23px;
   display: flex;
-  justify-content: space-between;
+  gap: 22px;
   align-items: center;
   border: 1px solid #FF6A6A;
   color: #F26376;
@@ -252,6 +252,14 @@ main {
   line-height: normal;
   background: none;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.bannerinfoProduct__overlay__button:hover .bannerinfoProduct__overlay__button_svg path {
+  fill: #FFF;
+}
+.bannerinfoProduct__overlay__button:hover {
+  color: #FFF;
+  background: #F26376;
 }
 
 .bannerinfoCart {
@@ -641,6 +649,9 @@ main {
 .productsCart__main_size {
   width: 262px;
 }
+.productsCart__main_svg:hover path {
+  fill: #F16D7F;
+}
 .productsCart__quantity {
   display: flex;
   gap: 24px;
@@ -670,20 +681,20 @@ main {
   height: 43px;
   border: 1px solid #A4A4A4;
   margin-top: 20.5px;
+  padding-left: 16px;
+  box-sizing: border-box;
 }
 .productsCart__form input::-moz-placeholder {
   color: #222;
   font-size: 13px;
   font-weight: 400;
   line-height: normal;
-  padding-left: 16px;
 }
 .productsCart__form input::placeholder {
   color: #222;
   font-size: 13px;
   font-weight: 400;
   line-height: normal;
-  padding-left: 16px;
 }
 .productsCart__form input:first-of-type::-moz-placeholder {
   color: #B1B1B1;
@@ -701,10 +712,15 @@ main {
   background: none;
   cursor: pointer;
   border: 1px solid #A4A4A4;
+  transition: all 0.3s;
+}
+.productsCart__form button:hover {
+  color: #FFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 .productsCart__part2 {
   margin-top: 40px;
-  margin-bottom: 72px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -764,11 +780,15 @@ main {
   cursor: pointer;
   padding: 14px 43px 16px 40px;
   margin-right: 9px;
+  transition: all 0.3s;
+}
+.productsCart__total button:hover {
+  color: #F16D7F;
+  background: #FFF;
 }
 .productsCart__mainButtons {
-  display: flex;
-  gap: 192px;
-  margin-bottom: 128px;
+  height: 250px;
+  position: relative;
 }
 .productsCart__mainButtons_left {
   color: #000;
@@ -778,6 +798,16 @@ main {
   background: none;
   border: 1px solid #A4A4A4;
   padding: 16px 39px 15px 38px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: absolute;
+  top: 72px;
+  left: 0;
+}
+.productsCart__mainButtons_left:hover {
+  color: #FFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 .productsCart__mainButtons_right {
   color: #000;
@@ -787,6 +817,16 @@ main {
   background: none;
   border: 1px solid #A4A4A4;
   padding: 16px 38px 15px 38px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: absolute;
+  top: 72px;
+  left: 427px;
+}
+.productsCart__mainButtons_right:hover {
+  color: #FFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 
 .pagination {
@@ -1022,6 +1062,9 @@ footer {
   line-height: normal;
   padding-left: 21.5px;
 }
+.menu a:hover {
+  color: #F16D7F;
+}
 
 .menu .menu-h2 {
   color: #F16D7F;
@@ -1188,7 +1231,7 @@ svg .icon {
   transition: fill 0.3s;
 }
 
-svg:hover path {
+.social-svg:hover path {
   fill: #FFFFFF;
 }
 

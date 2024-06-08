@@ -23,6 +23,8 @@ p,
 a,
 summary,
 span,
+label,
+input,
 button {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -818,6 +820,115 @@ main {
 .productsCart__mainButtons_right:hover {
   color: #FFF;
   background: #4A4A4A;
+}
+
+.registration__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+.registration__left-side {
+  width: 360px;
+}
+.registration__name {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__input {
+  margin-top: 20.5px;
+  width: 358px;
+  height: 43px;
+  border: 1px solid #A4A4A4;
+  padding: 17px;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__input::-moz-placeholder {
+  color: #B1B1B1;
+}
+.registration__input::placeholder {
+  color: #B1B1B1;
+}
+.registration__gender {
+  margin-top: 31.5px;
+  margin-bottom: 33px;
+  display: flex;
+  gap: 20px;
+}
+.registration__label {
+  display: flex;
+  gap: 10px;
+  color: #000;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__info {
+  margin-top: 15.5px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 39px;
+  margin-bottom: 96px;
+  padding: 16px 28px 16px 29px;
+  border: 1px solid #F16D7F;
+  background: #F16D7F;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.3s;
+}
+.registration__button:hover {
+  background: #FFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+.registration__button:hover .registration__svg path {
+  fill: #F16D7F;
+}
+.registration__right-side {
+  width: 652px;
+}
+.registration__heading {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__text {
+  margin-top: 22px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__offers {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration__offer {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .pagination {

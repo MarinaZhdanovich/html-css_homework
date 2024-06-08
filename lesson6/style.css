@@ -693,23 +693,16 @@ main {
   margin-top: 20.5px;
   padding-left: 16px;
   box-sizing: border-box;
+  color: #222;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
 }
 .productsCart__form input::-moz-placeholder {
-  color: #222;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
-}
-.productsCart__form input::placeholder {
-  color: #222;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
-}
-.productsCart__form input:first-of-type::-moz-placeholder {
   color: #B1B1B1;
 }
-.productsCart__form input:first-of-type::placeholder {
+.productsCart__form input::placeholder {
   color: #B1B1B1;
 }
 .productsCart__form button {
@@ -726,8 +719,7 @@ main {
 }
 .productsCart__form button:hover {
   color: #FFF;
-  background: #F16D7F;
-  border: 1px solid #F16D7F;
+  background: #4A4A4A;
 }
 .productsCart__total {
   margin-top: 40px;
@@ -810,8 +802,7 @@ main {
 }
 .productsCart__mainButtons_left:hover {
   color: #FFF;
-  background: #F16D7F;
-  border: 1px solid #F16D7F;
+  background: #4A4A4A;
 }
 .productsCart__mainButtons_right {
   color: #000;
@@ -826,8 +817,7 @@ main {
 }
 .productsCart__mainButtons_right:hover {
   color: #FFF;
-  background: #F16D7F;
-  border: 1px solid #F16D7F;
+  background: #4A4A4A;
 }
 
 .pagination {

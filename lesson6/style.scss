@@ -788,16 +788,14 @@ main {
     margin-top: 20.5px;
     padding-left: 16px;
     box-sizing: border-box;
-  }
-
-  &__form input::placeholder {
     color: #222;
     font-size: 13px;
     font-weight: 400;
     line-height: normal;
+    outline: none;
   }
 
-  &__form input:first-of-type::placeholder {
+  &__form input::placeholder {
     color: #B1B1B1;
   }
 
@@ -816,8 +814,7 @@ main {
 
   &__form button:hover {
     color: #FFF;
-    background: #F16D7F;
-    border: 1px solid #F16D7F;
+    background: #4A4A4A;
   }
 
   &__total {
@@ -912,8 +909,7 @@ main {
 
   &__mainButtons_left:hover {
     color: #FFF;
-    background: #F16D7F;
-    border: 1px solid #F16D7F;
+    background: #4A4A4A;
   }
 
   &__mainButtons_right {
@@ -930,8 +926,7 @@ main {
 
   &__mainButtons_right:hover {
     color: #FFF;
-    background: #F16D7F;
-    border: 1px solid #F16D7F;
+    background: #4A4A4A;
   }
 }
 

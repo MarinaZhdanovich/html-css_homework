@@ -752,7 +752,7 @@ main {
   }
 
   &__quantity {
-    width: 44px;
+    width: 42px;
     height: 24.949px;
     border: 1px solid #EAEAEA;
     color: #656565;
@@ -760,6 +760,11 @@ main {
     font-weight: 400;
     line-height: normal;
     text-align: center;
+
+    &_marging {
+      display: flex;
+      gap: 24px;
+    }
   }
 
   &__shipping {

@@ -661,7 +661,7 @@ main {
   fill: #F16D7F;
 }
 .productsCart__quantity {
-  width: 44px;
+  width: 42px;
   height: 24.949px;
   border: 1px solid #EAEAEA;
   color: #656565;
@@ -669,6 +669,10 @@ main {
   font-weight: 400;
   line-height: normal;
   text-align: center;
+}
+.productsCart__quantity_marging {
+  display: flex;
+  gap: 24px;
 }
 .productsCart__shipping {
   width: 360px;

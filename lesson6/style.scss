@@ -752,14 +752,9 @@ main {
   }
 
   &__quantity {
-    display: flex;
-    gap: 24px;
-  }
-
-  &__quantity span {
-    border: 1px solid #EAEAEA;
     width: 44px;
     height: 24.949px;
+    border: 1px solid #EAEAEA;
     color: #656565;
     font-size: 18px;
     font-weight: 400;

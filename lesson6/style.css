@@ -608,7 +608,15 @@ main {
 .productsCart__allinfo {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+.productsCart__part1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.productsCart__part2 {
+  display: flex;
+  flex-direction: column;
 }
 .productsCart__box {
   display: flex;
@@ -669,6 +677,8 @@ main {
 .productsCart__shipping {
   width: 360px;
   height: 272px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 .productsCart__form h2 {
   color: #222;
@@ -719,13 +729,8 @@ main {
   background: #F16D7F;
   border: 1px solid #F16D7F;
 }
-.productsCart__part2 {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 .productsCart__total {
+  margin-top: 40px;
   width: 360px;
   height: 214px;
   background: #F5F3F3;
@@ -787,8 +792,10 @@ main {
   background: #FFF;
 }
 .productsCart__mainButtons {
-  height: 250px;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 128px;
 }
 .productsCart__mainButtons_left {
   color: #000;
@@ -800,9 +807,6 @@ main {
   padding: 16px 39px 15px 38px;
   cursor: pointer;
   transition: all 0.3s;
-  position: absolute;
-  top: 72px;
-  left: 0;
 }
 .productsCart__mainButtons_left:hover {
   color: #FFF;
@@ -819,9 +823,6 @@ main {
   padding: 16px 38px 15px 38px;
   cursor: pointer;
   transition: all 0.3s;
-  position: absolute;
-  top: 72px;
-  left: 427px;
 }
 .productsCart__mainButtons_right:hover {
   color: #FFF;

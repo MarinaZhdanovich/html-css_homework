@@ -687,7 +687,17 @@ main {
   &__allinfo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  &__part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__part2 {
+    display: flex;
+    flex-direction: column;
   }
 
   &__box {
@@ -760,6 +770,8 @@ main {
   &__shipping {
     width: 360px;
     height: 272px;
+    margin-top: 17px;
+    margin-bottom: 17px;
  }
 
   &__form h2 {
@@ -808,14 +820,8 @@ main {
     border: 1px solid #F16D7F;
   }
 
-  &__part2 {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
   &__total {
+    margin-top: 40px;
     width: 360px;
     height: 214px;
     background: #F5F3F3;
@@ -885,9 +891,11 @@ main {
     background: #FFF;
   }
 
-  &__mainButtons {
-    height: 250px;
-    position: relative;
+  &__mainButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 128px;
   }
 
   &__mainButtons_left {
@@ -900,9 +908,6 @@ main {
     padding: 16px 39px 15px 38px;
     cursor: pointer;
     transition: all 0.3s;
-    position: absolute;
-    top: 72px;
-    left: 0;
   }
 
   &__mainButtons_left:hover {
@@ -921,9 +926,6 @@ main {
     padding: 16px 38px 15px 38px;
     cursor: pointer;
     transition: all 0.3s;
-    position: absolute;
-    top: 72px;
-    left: 427px;
   }
 
   &__mainButtons_right:hover {

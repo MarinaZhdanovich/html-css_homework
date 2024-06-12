@@ -980,7 +980,11 @@ main {
     font-size: 11px;
     font-weight: 400;
     line-height: normal;
+    &_hidden {
+      display: none;
+    }
   }
+
 
   &__info {
     margin-top: 15.5px;
@@ -1669,6 +1673,43 @@ svg:hover .icon{
       gap: 48px;
       margin-top: 22px;
       margin-bottom: 64px;
+    }
+  }
+
+  .registration {
+    &__content {
+      margin-top: 40px;
+    }
+
+    &__right-side {
+      width: 354px;
+    }
+
+    &__heading {
+      font-size: 16px;
+    }
+
+    &__label {
+      &_hidden {
+        display: flex;
+      }
+    }
+
+    &__text {
+      margin-top: 32px;
+      font-size: 16px;
+    }
+
+    &__offers {
+      margin-top: 22px;
+    }
+
+    &__offer {
+      font-size: 16px;
+    }
+
+    &__offer_margin {
+      margin-top: 10px;
     }
   }
 

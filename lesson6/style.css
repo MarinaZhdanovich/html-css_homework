@@ -868,6 +868,9 @@ main {
   font-weight: 400;
   line-height: normal;
 }
+.registration__label_hidden {
+  display: none;
+}
 .registration__info {
   margin-top: 15.5px;
   color: #B1B1B1;
@@ -1453,6 +1456,31 @@ svg:hover .icon {
     gap: 48px;
     margin-top: 22px;
     margin-bottom: 64px;
+  }
+  .registration__content {
+    margin-top: 40px;
+  }
+  .registration__right-side {
+    width: 354px;
+  }
+  .registration__heading {
+    font-size: 16px;
+  }
+  .registration__label_hidden {
+    display: flex;
+  }
+  .registration__text {
+    margin-top: 32px;
+    font-size: 16px;
+  }
+  .registration__offers {
+    margin-top: 22px;
+  }
+  .registration__offer {
+    font-size: 16px;
+  }
+  .registration__offer_margin {
+    margin-top: 10px;
   }
   .offer {
     gap: 20px;

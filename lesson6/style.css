@@ -682,7 +682,7 @@ main {
   margin-top: 17px;
   margin-bottom: 17px;
 }
-.productsCart__form h2 {
+.productsCart__shipping_h2 {
   color: #222;
   font-size: 16px;
   font-weight: 400;
@@ -1428,6 +1428,31 @@ svg:hover .icon {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 16px;
+  }
+  .productsCart {
+    margin-top: 59px;
+  }
+  .productsCart__allinfo {
+    flex-direction: column;
+  }
+  .productsCart__part2 {
+    justify-content: space-between;
+    flex-direction: initial;
+    gap: 15px;
+    margin-bottom: 128px;
+  }
+  .productsCart__main {
+    gap: 137px;
+  }
+  .productsCart__shipping {
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  .productsCart__mainButtons {
+    justify-content: center;
+    gap: 48px;
+    margin-top: 22px;
+    margin-bottom: 64px;
   }
   .offer {
     gap: 20px;

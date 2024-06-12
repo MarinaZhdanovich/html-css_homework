@@ -774,13 +774,12 @@ main {
     height: 272px;
     margin-top: 17px;
     margin-bottom: 17px;
- }
-
-  &__form h2 {
-    color: #222;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
+      &_h2 {
+      color: #222;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 
   &__form input {
@@ -1640,6 +1639,37 @@ svg:hover .icon{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 16px;
+  }
+
+  .productsCart {
+    margin-top: 59px;
+
+    &__allinfo {
+      flex-direction: column;
+    }
+
+    &__part2 {
+      justify-content: space-between;
+      flex-direction: initial;
+      gap: 15px;
+      margin-bottom: 128px;
+    }
+
+    &__main {
+      gap: 137px;
+    }
+
+    &__shipping {
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+
+    &__mainButtons{
+      justify-content: center;
+      gap: 48px;
+      margin-top: 22px;
+      margin-bottom: 64px;
+    }
   }
 
   .offer {

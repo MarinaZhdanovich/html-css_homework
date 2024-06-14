@@ -310,7 +310,7 @@ main {
   padding: 13px 17px 16px;
   box-sizing: border-box;
 }
-.filter__main[open] summary.filter__summary {
+.filter__main[open] .filter__summary .filter__span_color {
   color: #EF5B70;
   font-size: 14px;
   font-weight: 600;
@@ -323,6 +323,8 @@ main {
   display: flex;
   align-items: center;
   gap: 11px;
+}
+.filter__span {
   color: #000;
   font-size: 14px;
   font-weight: 600;
@@ -1606,6 +1608,58 @@ svg:hover .icon {
     min-height: 363px;
     justify-content: center;
   }
+  .bannerinfoCatalog {
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .bannerinfoCatalog__message h2 {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  .filter {
+    height: 81px;
+  }
+  .filter__main {
+    top: 24px;
+  }
+  .filter__span {
+    display: none;
+  }
+  .filter__main[open] .filter__summary .filter__span {
+    display: block;
+  }
+  .filter__summary_svg {
+    width: 37.5px;
+    height: 25px;
+  }
+  .filter__main[open] .filter__summary .filter__summary_svg {
+    width: 15px;
+    height: 10px;
+  }
+  .filter__sort {
+    top: 24px;
+    left: 99px;
+    width: 260px;
+  }
+  .filter__sort__summary {
+    gap: 9px;
+    font-size: 12px;
+  }
+  .pagination {
+    margin-top: 40.5px;
+    margin-bottom: 64.5px;
+  }
+  .productsCatalog {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 16px;
+  }
+  .productsCatalog.container {
+    max-width: 360px;
+  }
+  .product3_hidden {
+    display: none;
+  }
   .hidebanner {
     display: none;
   }
@@ -1664,8 +1718,8 @@ svg:hover .icon {
     gap: 16.61px;
     margin-bottom: 40.61px;
   }
-  .products.container {
-    max-width: 359px;
+  .filter.container {
+    max-width: 360px;
   }
   .product p {
     font-weight: 400;

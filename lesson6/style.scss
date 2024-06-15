@@ -225,7 +225,9 @@ main {
 .bannerinfoProduct__background{
   width: 597px;
   height: 724px;
+  margin-top: 10.5px;
   background-image: url(./img/image_woman_product.jpg);
+  background-size: cover;
 }
 
 .bannerinfoProduct__overlay {
@@ -1594,6 +1596,7 @@ svg:hover .icon{
   }
 
   .bannerinfoProduct__background{
+    margin-top: 30px;
     width: 466px;
     height: 565px;
   }
@@ -1936,6 +1939,87 @@ svg:hover .icon{
 
   .product3_hidden {
     display: none;
+  }
+
+  .bannerinfoProduct__background{
+    margin-top: 84.6px;
+    width: 374px;
+    height: 454px;
+  }
+
+  .bannerinfoProduct {
+    height: 624px;
+
+    &__background-left {
+      top: 288px;
+    }
+
+    &__background-right {
+      top: 288px;
+    }
+  }
+
+  .bannerinfoProduct__overlay {
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 64.41px;
+
+    p {
+      margin-top: 31.9px;
+      width: 326px;
+      line-height: 143.1%;
+    }
+
+    h3 {
+      line-height: 130%;
+    }
+
+    &__line {
+      width: 175px;
+      margin-top: 31.91px;
+      margin-bottom: 49.36px;
+    }
+
+    &__filter {
+      width: 304.02px;
+    }
+
+    &__filter_gap {
+      gap: 10px;
+    }
+
+    &__filter_gap h2 {
+      font-size: 10px;
+    }
+
+    &__button {
+      margin-top: 64px;
+    }
+  }
+
+  .product4 {
+    width: 358.141px;
+    height: 417.831px;
+  }
+
+  .product6 {
+    width: 358.141px;
+    height: 417.831px;
+  }
+
+  .bannerinfoProduct__overlay.container {
+    max-width: 375px;
+  }
+
+  .productsProduct.container {
+    max-width: 360px;
+  }
+
+  .productsProduct {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    margin-bottom: 64px;
   }
 
   .hidebanner {

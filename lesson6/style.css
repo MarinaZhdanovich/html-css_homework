@@ -1716,6 +1716,209 @@ svg:hover .icon {
     gap: 0;
     margin-bottom: 64px;
   }
+  .bannerinfoCart {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .bannerinfoCart__message h2 {
+    margin-top: 50px;
+    margin-left: 19px;
+  }
+  .productsCart.container {
+    max-width: 358px;
+  }
+  .productsCart {
+    margin-top: 39px;
+  }
+  .productsCart__allinfo {
+    flex-direction: column;
+  }
+  .productsCart__part1 {
+    gap: 32px;
+  }
+  .productsCart__box {
+    box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.13);
+  }
+  .productsCart__box img {
+    width: 143.859px;
+    height: 188px;
+  }
+  .productsCart__price {
+    padding: 13.52px 12.08px 38px 17px;
+  }
+  .productsCart__price h1 {
+    font-size: 16px;
+  }
+  .productsCart__price h2 {
+    font-size: 14px;
+  }
+  .productsCart__price h2.productsCart__main_marging-left {
+    margin-left: 0;
+  }
+  .productsCart__main {
+    gap: 31.3px;
+    margin-bottom: 25.85px;
+  }
+  .productsCart__main_size {
+    width: 143.859px;
+  }
+  .productsCart__main_svg {
+    width: 9.883px;
+    height: 11.059px;
+  }
+  .productsCart__quantity {
+    width: 22.16px;
+    height: 13.328px;
+    font-size: 10px;
+  }
+  .productsCart__quantity_marging {
+    gap: 15px;
+  }
+  .productsCart__shipping {
+    width: 360px;
+    height: 272px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+  .productsCart__shipping_h2 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .productsCart__form input {
+    width: 358px;
+    height: 43px;
+    border: 1px solid #A4A4A4;
+    margin-top: 20.5px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    color: #222;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+  }
+  .productsCart__form input::-moz-placeholder {
+    color: #B1B1B1;
+  }
+  .productsCart__form input::placeholder {
+    color: #B1B1B1;
+  }
+  .productsCart__form button {
+    margin-top: 23px;
+    color: #4A4A4A;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 9px 13.2px 11px 14.21px;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #A4A4A4;
+    transition: all 0.3s;
+  }
+  .productsCart__form button:hover {
+    color: #FFF;
+    background: #4A4A4A;
+  }
+  .productsCart__total {
+    margin-top: 40px;
+    width: 360px;
+    height: 214px;
+    background: #F5F3F3;
+    padding: 39px 34px 42px 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .productsCart__subtotal {
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .productsCart__subtotal h2 {
+    color: #4A4A4A;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .productsCart__grandtotal {
+    margin-top: 12px;
+    margin-right: 3px;
+    margin-bottom: 21px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .productsCart__grandtotal h2 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .productsCart__grandtotal h2.productsCart__grandtotal_color {
+    color: #F16D7F;
+    font-weight: 700;
+  }
+  .productsCart__line {
+    border-bottom: 1px solid #E2E2E2;
+    width: 275px;
+    margin-right: 8px;
+    margin-bottom: 17px;
+  }
+  .productsCart__total button {
+    background: #F16D7F;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    padding: 14px 43px 16px 40px;
+    margin-right: 9px;
+    transition: all 0.3s;
+  }
+  .productsCart__total button:hover {
+    color: #F16D7F;
+    background: #FFF;
+  }
+  .productsCart__mainButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 128px;
+  }
+  .productsCart__mainButtons_left {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    border: 1px solid #A4A4A4;
+    padding: 16px 39px 15px 38px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .productsCart__mainButtons_left:hover {
+    color: #FFF;
+    background: #4A4A4A;
+  }
+  .productsCart__mainButtons_right {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    border: 1px solid #A4A4A4;
+    padding: 16px 38px 15px 38px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .productsCart__mainButtons_right:hover {
+    color: #FFF;
+    background: #4A4A4A;
+  }
   .hidebanner {
     display: none;
   }

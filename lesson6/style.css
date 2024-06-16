@@ -1807,6 +1807,9 @@ svg:hover .icon {
     font-size: 12px;
     padding: 9px 23.5px 9px 23.5px;
   }
+  .products.container {
+    max-width: 360px;
+  }
   .registration.container {
     max-width: 360px;
   }

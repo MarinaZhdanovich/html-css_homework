@@ -1663,6 +1663,9 @@ svg:hover .icon {
   .product3p_hidden {
     display: none;
   }
+  .product3_hidden {
+    display: none;
+  }
   .bannerinfoProduct__background {
     margin-top: 84.6px;
     width: 374px;

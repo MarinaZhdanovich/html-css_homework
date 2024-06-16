@@ -1412,6 +1412,9 @@ svg:hover .icon {
   .product6_hidden {
     display: none;
   }
+  .product3_hidden {
+    display: none;
+  }
   .bannerinfoProduct__overlay {
     height: 601px;
     margin-top: 0;

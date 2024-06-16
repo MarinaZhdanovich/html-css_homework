@@ -2018,6 +2018,16 @@ svg:hover .icon{
     }
   }
 
+  .bannerinfoCart__rega {
+    align-items: center;
+    justify-content: center;
+
+    &_h2 h2 {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
   .productsCart.container {
     max-width: 360px;
   }
@@ -2108,6 +2118,61 @@ svg:hover .icon{
       padding: 9px 23.5px 9px 23.5px;
     }
 
+  }
+
+  .registration.container {
+    max-width: 360px;
+  }
+
+  .registration {
+    &__content {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    &__gender {
+      margin-top: 31.5px;
+      margin-bottom: 33px;
+      display: flex;
+      gap: 20px;
+    }
+
+    &__label {
+      &_hidden {
+        display: flex;
+      }
+    }
+
+    &__right-side {
+      width: 360px;
+      margin-bottom: 100.24px;
+    }
+
+    &__heading {
+      font-size: 16px;
+    }
+
+    &__text {
+      margin-top: 32.36px;
+      font-size: 16px;
+    }
+
+    &__button {
+      margin-bottom: 40px;
+    }
+
+    &__offers {
+      margin-top: 22.25px;
+    }
+
+    &__offer {
+      gap: 23.26px;
+      font-size: 16px;
+    }
+
+    &__offer_margin {
+      margin-top: 10px;
+    }
   }
 
   .hidebanner {

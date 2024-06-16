@@ -1724,6 +1724,14 @@ svg:hover .icon {
     margin-top: 50px;
     margin-left: 19px;
   }
+  .bannerinfoCart__rega {
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerinfoCart__rega_h2 h2 {
+    margin-top: 0;
+    margin-left: 0;
+  }
   .productsCart.container {
     max-width: 360px;
   }
@@ -1795,6 +1803,46 @@ svg:hover .icon {
     color: #575757;
     font-size: 12px;
     padding: 9px 23.5px 9px 23.5px;
+  }
+  .registration.container {
+    max-width: 360px;
+  }
+  .registration__content {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .registration__gender {
+    margin-top: 31.5px;
+    margin-bottom: 33px;
+    display: flex;
+    gap: 20px;
+  }
+  .registration__label_hidden {
+    display: flex;
+  }
+  .registration__right-side {
+    width: 360px;
+    margin-bottom: 100.24px;
+  }
+  .registration__heading {
+    font-size: 16px;
+  }
+  .registration__text {
+    margin-top: 32.36px;
+    font-size: 16px;
+  }
+  .registration__button {
+    margin-bottom: 40px;
+  }
+  .registration__offers {
+    margin-top: 22.25px;
+  }
+  .registration__offer {
+    gap: 23.26px;
+    font-size: 16px;
+  }
+  .registration__offer_margin {
+    margin-top: 10px;
   }
   .hidebanner {
     display: none;
